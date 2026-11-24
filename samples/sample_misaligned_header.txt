@@ -1,0 +1,20 @@
+Delivered-To: user@target.org
+Received: by 2002:a05:6e02:18c4:0:0:0:0 with SMTP id misalign332;
+        Tue, 24 Nov 2026 14:45:10 -0800 (PST)
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@sendgrid.net header.s=smtpapi header.b=9Yx2;
+       spf=pass (google.com: domain of bounces@sendgrid.net designates 167.89.0.1 as permitted sender) smtp.mailfrom=bounces@sendgrid.net;
+       dmarc=fail (p=REJECT sp=REJECT dis=REJECT) header.from=paypal.com
+Received-SPF: pass (google.com: domain of bounces@sendgrid.net designates 167.89.0.1 as permitted sender) client-ip=167.89.0.1; envelope-from=bounces@sendgrid.net;
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=sendgrid.net; s=smtpapi;
+       h=from:to:subject:date:message-id;
+       b=9Yx2...==
+From: PayPal Security Team <service@paypal.com>
+To: user@target.org
+Subject: Action Required: Confirm Your Account Credentials
+Date: Tue, 24 Nov 2026 22:45:00 +0000
+Message-ID: <sg.campaign.88371@sendgrid.net>
+Return-Path: <bounces@sendgrid.net>
+Content-Type: text/plain; charset="UTF-8"
+
+Suspicious login detected. Click here to verify your identity.

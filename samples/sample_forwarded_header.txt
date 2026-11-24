@@ -1,0 +1,20 @@
+Delivered-To: recipient@company.com
+Received: by 2002:a05:6e02:18c4:0:0:0:0 with SMTP id fwd9912;
+        Tue, 24 Nov 2026 14:35:40 -0800 (PST)
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@newsletter.dev.io header.s=k1 header.b=Ab38Xy;
+       spf=softfail (google.com: domain of transitioning dev.io does not designate 192.0.2.77 as permitted sender) smtp.mailfrom=bounces@forwarder.net;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=newsletter.dev.io
+Received-SPF: softfail (google.com: transitioning domain of bounces@forwarder.net) client-ip=192.0.2.77; envelope-from=bounces@forwarder.net;
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=newsletter.dev.io; s=k1;
+       h=from:to:subject:date:message-id;
+       b=Ab38Xy...==
+From: Developer Weekly <editor@newsletter.dev.io>
+To: recipient@company.com
+Subject: Issue #104: Modern Cloud Security & Authentication
+Date: Tue, 24 Nov 2026 18:30:00 +0000
+Message-ID: <dev-weekly-104@newsletter.dev.io>
+Return-Path: <bounces@forwarder.net>
+Content-Type: text/plain; charset="UTF-8"
+
+Weekly developer insights and architecture news.

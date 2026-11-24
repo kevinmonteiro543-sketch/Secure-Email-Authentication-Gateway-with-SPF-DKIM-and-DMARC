@@ -1,0 +1,7 @@
+# Secure Email Authentication Gateway (SPF, DKIM, DMARC)
+# Core and CLI Dependencies
+
+cryptography>=41.0.0
+reportlab>=4.0.0
+dkimpy>=1.1.0
+dnspython>=2.4.0
